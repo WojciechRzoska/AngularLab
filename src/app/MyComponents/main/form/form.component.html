@@ -1,25 +1,27 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <mat-form-field appearance="fill">
-    <mat-label>Imię</mat-label>
-    <input matInput type="text" formControlName="firstName" />
-  </mat-form-field>
+<div class="FormWrapper">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" class="form">
+    <mat-form-field appearance="fill">
+      <mat-label>Imię</mat-label>
+      <input matInput type="text" formControlName="firstName" />
+    </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Nazwisko</mat-label>
-    <input matInput type="text" formControlName="lastName" />
-  </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Nazwisko</mat-label>
+      <input matInput type="text" formControlName="lastName" />
+    </mat-form-field>
 
-  <mat-form-field appearance="fill">
-    <mat-label>Email</mat-label>
-    <input matInput type="email" formControlName="email" />
-  </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
 
-  <button
-    mat-raised-button
-    color="primary"
-    type="submit"
-    [disabled]="form.invalid"
-  >
-    Wyślij
-  </button>
-</form>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      [disabled]="form.invalid"
+    >
+      Wyślij
+    </button>
+  </form>
+</div>

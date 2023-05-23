@@ -1,0 +1,8 @@
+.completed {
+  text-decoration: line-through;
+}
+.wrapper {
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
