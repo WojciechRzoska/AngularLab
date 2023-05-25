@@ -1,0 +1,19 @@
+<h1>Todo List</h1>
+<app-task-item [todos]="todos" (todoAdded)="addTodo($event)"></app-task-item>
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo.text }} - {{ todo.completed ? "Completed" : "Not Completed" }}
+    <input
+      type="checkbox"
+      [(ngModel)]="todo.completed"
+      (change)="updateCompletion(todo)"
+    />
+    <button
+      mat-raised-button
+      (click)="deleteTodo(todo)"
+      [disabled]="!todo.completed"
+    >
+      X
+    </button>
+  </li>
+</ul>

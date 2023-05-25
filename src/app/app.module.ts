@@ -7,18 +7,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MainComponent } from './MyComponents/main/main.component';
 import { MyMaterialModule } from './mymaterial.module';
-import { HomeComponent } from './MyComponents/main/home/home.component';
+
 import { FormComponent } from './MyComponents/main/form/form.component';
 import { PokemonComponent } from './MyComponents/main/pokemon/pokemon.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskListComponent } from './MyComponents/main/task-list/task-list.component';
+import { TaskItemComponent } from './MyComponents/main/task-item/task-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    HomeComponent,
     FormComponent,
     PokemonComponent,
+    TaskListComponent,
+    TaskItemComponent,
   ],
   imports: [
     BrowserModule,

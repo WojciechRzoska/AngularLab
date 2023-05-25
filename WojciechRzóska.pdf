@@ -1,0 +1,5 @@
+Nazwa projektu: angularowa piaskownica
+
+Brak pomysłu na ciekawy projekt, zrobiłem piaskownicę gdzie odhaczyłem wszystkie punkty z wymagań projektowych.
+Nie było większej trudności, prócz samego faktu uzywania angulara (wolałbym pracować w ReactJS, którego się uczę). Wszystkiego dowiedziałem się z dokumentacji technicznej. 
+Jedynie byłem zaskoczony faktem mozliwosci relacji child - parent, gdzie w Reactie jest to niemozliwe.

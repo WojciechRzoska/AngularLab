@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FormComponent {
   form: FormGroup;
-
+  status: string = '';
   constructor(private fb: FormBuilder) {
     this.form = this.fb.group({
       firstName: ['', Validators.required],
@@ -21,7 +21,12 @@ export class FormComponent {
 
   onSubmit(): void {
     if (this.form.valid) {
-      console.log('Form submitted:', this.form.value);
+      this.form = this.fb.group({
+        firstName: [''],
+        lastName: [''],
+        email: [''],
+      });
+      this.status = 'Form send';
     }
   }
 }
